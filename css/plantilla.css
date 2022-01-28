@@ -1,0 +1,252 @@
+
+/* Paleta de colores https://coolors.co/palettes/trending
+https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500
+*/
+* {
+    margin: 1px;
+    padding: 1px;
+ }
+ 
+ header, section, footer, aside, nav, article, figure, figcaption,
+ hgroup{
+ display: block;
+ }
+ body {
+ text-align: center;
+ }
+
+
+ 
+ h1 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font: bold 14px verdana, sans-serif;
+    color: #FF2400;
+
+    }
+    #titulo{
+        display: inline;	  
+        margin-left: 0%; vertical-align:bottom;
+        font-size:36px;
+    }
+
+    h2 {
+    font: bold 14px verdana, sans-serif;
+    }
+
+ /* Responsive */ 
+ #contenedor {
+    width: auto; 
+    margin: 15px auto;
+    }
+ 
+  #contenedor {
+    font: 1.2em Helvetica, Arial, sans-serif;	 
+    padding: 0;
+   
+    margin-left: 1%;
+    margin-right:  0%;
+      
+    display: grid;
+    grid-template-areas:  "a a"                         
+                          "c c"
+                          "d d"
+                          "e e";                          
+    
+     grid-template-rows: 90px auto auto  100px; 
+     grid-template-columns: 5fr 2fr; 
+  } 
+ /*//////////////////////////////////////////////////////////*/
+  @media screen and (max-width: 700px)
+  {
+    #titulo{
+        display: inline;	  
+        margin-left: 0%;  
+        font-size: 16px; 
+    }
+   }
+   @media screen and (max-width: 300px)
+   {
+     #titulo{
+         display: none;	  
+         margin-left: 0%;  
+         font-size: 10px; 
+     }
+    }
+   
+ nav input{display: none;}
+ nav label{display: none;}
+ @media screen and (max-width: 500px)
+ {
+ *{
+  font-family: Arial;
+}
+
+#menuopciones:checked  ~ ul{
+  display:block;
+}
+#menuopciones:checked  ~ ul li{
+  display:block;
+}
+ 
+#menuopciones { 
+  display: none;
+}
+
+nav label {
+  box-sizing: border-box;
+  display: inline-block; 
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  margin: 12px;
+  
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+nav label:hover{
+  background:  #45315D;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+nav input:checked ~ label {
+  background: lightgrey; 
+}
+
+nav ul{
+  margin-top:0px;
+  padding: 0;
+  width: 200px;
+  opacity: 0.96;   z-index: 0;
+  background: #023047;
+
+}
+
+ 
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  filter: brightness(110%);
+
+
+/* ************************* MENU AMBURGUESA *************************** */  
+}
+ /* Responsive  /////////////////////////////////////////////////////////*/
+ }
+  div span{float:right;   }
+  /*div label+ select{position:relative;left: 114px;  }*/
+  hgroup h1{color:hsla(180, 72%, 15%, 0.808);
+  margin-bottom: 3px;font: bold 1em sans-serif;}
+  
+    #cabecera {
+    background: #45315D;
+    border: 1px solid #999999;
+    padding: 1px;
+
+    grid-area:a;  
+   
+    }
+    #menu {
+    background: #023047;
+    padding: 5px 5px;
+    height: 5px;
+
+    grid-area:b;  
+    opacity: 0.96; 
+    }
+    #menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+    color: #8ecae6;
+
+    box-shadow: 2px 2px 3px rgba(146, 145, 145, 0.5);
+    padding: 1px 10px 10px 10px;
+    transition: border-bottom 180ms;
+    cursor: pointer;
+ 
+    } 
+
+    nav label{
+      background:  #FF9280;
+      margin-top: -10px;
+    }
+/* Estilo del boton cuando se pasa el mouse por encima*/
+ 
+nav label:hover{
+    background:  rgb(190, 238, 240);
+  }
+  .selected,
+  li:hover {
+    border-bottom: 7px solid #FF9280;
+    padding-bottom: 3px;
+  }
+  
+    #seccion {
+   margin-top: 2%;
+   grid-area:c;
+/*   z-index: 4; */
+    
+   }
+    #columna {
+   
+    margin: 0%;
+   
+    padding: 10px;
+    background: #FF9280;
+
+    grid-area:d;  
+    }
+
+
+
+
+    
+    #pie {
+    /*clear: both;*/
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
+
+    grid-area:e;  
+    }
+    article {
+    background: #45315D;
+    border: 1px solid #999999;
+    padding: 15px;
+    margin-bottom: 15px;
+    }
+    article footer {
+    text-align: right;
+    }
+    time {
+    color: #999999;
+    }
+    figcaption {
+    font: italic 14px verdana, sans-serif;
+    }
+    
+      
+    /* ///////// CSS para el crud libros   ////////////////// 
+    figure img {
+      width: 50px;
+      height: 50px;
+    }*/
+   .tablaLibros{
+       width: 100%;
+       border:2px  fuchsia solid
+      }
+
+      .tablaLibros tbody  tr td{
+        margin-right:55px;
+      }
+
+input:invalid {  border: 1px solid red;}
+input:valid {  border: 1px solid green;}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="./css/plantilla.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+        <h1 id="titulo">Caminante Actividad 18 </h1>
+    </header>
+    <section id="seccion">
+      <section>
+        <p style="font-family:fantasy "id="tiempo"></p>
+      </section>  
+      <article>
+        <div class="map_canvas" id="map_canvas" style="width: 100%;height: 400px;background-color: bisque;">
+        </div>
+        <footer>
+          
+        </footer>
+      </article>
+      <article><p>Recorrido 
+        <select id="listaCalles"></select>  <input id="reiniciar"  type="button" value="Reiniciar" ></p>
+        </article>
+    </section>
+    <aside id="columna">
+        <p>Zoom <input id="cambioResilucionMapa" type="range" value="16" min="10" max="20"> <output id="output" value="16">16</output></p>
+        <p>Color Trazado<input id="colorTrazado" type="color" >  </p>
+        <p>Grosor<input id="grosorLinea"  type="range" value="2" min="2" max="6"> <output id="outpuGrosort" value="2">2</output></p>
+    </aside>
+  </div>
+
+  <script src="./js/funciones.js"></script>
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeNRBEIWYeWRRvY8On_9pkSD1_J_zLykQ&libraries=geometry">
+  </script>
+  <script src="./js/mapas.js"></script>
+</body>
+</html>
